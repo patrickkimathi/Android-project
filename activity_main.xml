@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F4F1"
+    android:scrollbarTrackHorizontal="@drawable/doctor"
+    android:visibility="visible"
+    tools:context=".MainActivity">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:ignore="MissingConstraints" />
+    <Button
+        android:id="@+id/doctorbtn"
+        android:layout_width="113dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="24dp"
+        android:text="Doctor"
+        app:layout_constraintEnd_toStartOf="@+id/patientbtn"
+        app:layout_constraintHorizontal_bias="0.144"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/doctorimageView" />
+
+    <Button
+        android:id="@+id/patientbtn"
+        android:layout_width="113dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:text="Patient"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/patientimageView" />
+
+    <ImageView
+        android:id="@+id/doctorimageView"
+        android:layout_width="119dp"
+        android:layout_height="121dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toStartOf="@+id/patientimageView"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewWelcome"
+        app:srcCompat="@drawable/doctor" />
+
+    <ImageView
+        android:id="@+id/patientimageView"
+        android:layout_width="108dp"
+        android:layout_height="126dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewWelcome"
+        app:srcCompat="@drawable/patient" />
+
+    <TextView
+        android:id="@+id/textViewLogo"
+        android:layout_width="273dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="32dp"
+        android:text="Virtual HealthCare"
+        android:textColor="#3949AB"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.417"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewWelcome"
+        android:layout_width="193dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="8dp"
+        android:text="Welcome To Digital Medic"
+        android:textColor="#3949AB"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.418"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLogo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

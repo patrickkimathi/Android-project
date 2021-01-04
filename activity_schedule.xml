@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBFCFD"
+    tools:context=".Schedule">
+
+    <TextView
+        android:id="@+id/schedulelogo"
+        android:layout_width="261dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="44dp"
+        android:text="Virtual HealthCare"
+        android:textColor="#5E35B1"
+        android:textStyle="bold"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.673"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tesxtViewSchedule"
+        android:layout_width="234dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="40dp"
+        android:background="#2EEF0B"
+        android:text="Update Schedule"
+        android:textColor="#5E35B1"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.552"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/schedulelogo" />
+
+    <TextView
+        android:id="@+id/patientRecords"
+        android:layout_width="233dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="12dp"
+        android:background="#3BFA07"
+        android:text="Patient  Records"
+        android:textColor="#5E35B1"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAppointments" />
+
+    <TextView
+        android:id="@+id/feedback"
+        android:layout_width="231dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:background="#07FB11"
+        android:text="View Feedback"
+        android:textColor="#5E35B1"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.561"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/patientRecords" />
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="253dp"
+        android:layout_height="211dp"
+        android:layout_marginBottom="48dp"
+        android:focusedMonthDateColor="#F1043B"
+        android:weekNumberColor="#3949AB"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/feedback"
+        app:layout_constraintVertical_bias="0.171" />
+
+    <TextView
+        android:id="@+id/textViewAppointments"
+        android:layout_width="237dp"
+        android:layout_height="31dp"
+        android:background="#1CEA25"
+        android:text="View Appointments"
+        android:textColor="#5E35B1"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.568"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="151dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
